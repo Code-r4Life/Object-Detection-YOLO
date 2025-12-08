@@ -52,7 +52,8 @@ const Navbar = () => {
               <div className="h-6 w-px bg-white/10 mx-2"></div>
 
               <a
-                href="#"
+                href="https://github.com/Code-r4Life/Object-Detection-YOLO.git"
+                target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors px-3 py-2 rounded-md hover:bg-white/5"
               >
                 <Github size={20} />
@@ -90,7 +91,8 @@ const Navbar = () => {
               </Link>
             ))}
             <a
-              href="#"
+              href="https://github.com/Code-r4Life/Object-Detection-YOLO.git"
+              target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-2 px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-white/10"
             >
               <Github size={20} />

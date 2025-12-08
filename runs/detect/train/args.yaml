@@ -1,16 +1,16 @@
 task: detect
 mode: train
-model: yolov8m.pt
+model: yolov8s.pt
 data: yolo_params.yaml
-epochs: 10
+epochs: 40
 time: null
 patience: 100
-batch: 16
-imgsz: 640
+batch: 4
+imgsz: 832
 save: true
 save_period: -1
 cache: false
-device: cpu
+device: '0'
 workers: 8
 project: null
 name: train
@@ -103,4 +103,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: botsort.yaml
-save_dir: D:\CosmoHack_Object_Detection\runs\detect\train
+save_dir: /content/runs/detect/train

@@ -1,8 +1,19 @@
 train: train_2\train2\images
 val: train_2\val2\images
-test: test1\
+# test: test1\
 
 nc: 7
+
+augment:
+  hsv_h: 0.015
+  hsv_s: 0.7
+  hsv_v: 0.4
+  degrees: 10
+  translate: 0.05
+  scale: 0.5
+  perspective: 0.0005
+  fliplr: 0.5
+  mixup: 0.1
 
 names:
   0: OxygenTank

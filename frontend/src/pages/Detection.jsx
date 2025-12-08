@@ -83,6 +83,11 @@ const Detection = () => {
 
       setResultImage(response.data.image);
       setDetections(response.data.detections);
+      if (response.data.detections.length === 0) {
+        setError("No objects detected in the image.");
+      } else {
+        setError(null);
+      }
     } catch (err) {
       setError("Detection failed. Please try again.");
       console.error(err);

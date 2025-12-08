@@ -176,9 +176,9 @@ const About = () => {
           Meet The Team
         </h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <TeamMember name="Shinjan Saha" role="Developer" />
-          <TeamMember name="Satyabrata Das Adhikari" role="Developer" />
-          <TeamMember name="Sayan Sk" role="Developer" />
+          <TeamMember name="Shinjan Saha" role="Developer" linkedin="https://www.linkedin.com/in/shinjan-saha-1bb744319/" github="https://github.com/Code-r4Life/" />
+          <TeamMember name="Satyabrata Das Adhikari" role="Developer" linkedin="https://www.linkedin.com/in/satyabrata-das-adhikari-1813a7324/" github="https://github.com/satya-py/" />
+          <TeamMember name="Sayan Sk" role="Developer" linkedin="https://www.linkedin.com/in/sayan-sk-092203318/" github="https://github.com/Sayan474/" />
         </div>
       </section>
     </div>
@@ -192,7 +192,7 @@ const TechCard = ({ icon, name }) => (
   </div>
 );
 
-const TeamMember = ({ name, role }) => (
+const TeamMember = ({ name, role, linkedin, github }) => (
   <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center hover:transform hover:-translate-y-1 transition-all duration-300">
     <div className="w-24 h-24 bg-gradient-to-br from-gray-700 to-gray-600 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl font-bold text-white">
       {name.charAt(0)}
@@ -201,12 +201,15 @@ const TeamMember = ({ name, role }) => (
     <p className="text-blue-400 text-sm mb-4">{role}</p>
     <div className="flex justify-center gap-4">
       <a
-        href="#"
+        href={linkedin}
+        target="_blank" rel="noopener noreferrer"
         className="text-gray-400 hover:text-blue-500 transition-colors"
       >
         <Linkedin size={20} />
       </a>
-      <a href="#" className="text-gray-400 hover:text-white transition-colors">
+      <a href={github} 
+      target="_blank" rel="noopener noreferrer"
+      className="text-gray-400 hover:text-white transition-colors">
         <Github size={20} />
       </a>
     </div>

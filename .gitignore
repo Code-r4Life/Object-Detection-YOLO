@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+runs/detect/train*/**
+!runs/detect/train/**

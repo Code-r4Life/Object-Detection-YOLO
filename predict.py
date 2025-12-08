@@ -3,7 +3,7 @@ import cv2
 from pathlib import Path
 
 # ==================== CONFIGURATION - CHANGE THESE ====================
-MODEL_PATH = "runs/detect/train6/weights/best.pt"  # Your model path
+MODEL_PATH = "runs/detect/train/weights/best.pt"  # Your model path
 IMAGE_PATH = "test1/images/000000007_dark_clutter.png"                       # Your image to predict
 OUTPUT_DIR = "predictions"                          # Where to save results
 CONFIDENCE = 0.5                                    # Confidence threshold (0.0 to 1.0)

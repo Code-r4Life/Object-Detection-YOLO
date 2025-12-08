@@ -12,9 +12,9 @@ CORS(app)
 
 # Configuration
 # Adjust path to point to the model relative to backend folder or absolute path
-# Assuming runs/detect/train6/weights/best.pt is in the parent directory of backend
+# Assuming runs/detect/train/weights/best.pt is in the parent directory of backend
 BASE_DIR = Path(__file__).resolve().parent.parent
-MODEL_PATH = BASE_DIR / "runs" / "detect" / "train6" / "weights" / "best.pt"
+MODEL_PATH = BASE_DIR / "runs" / "detect" / "train" / "weights" / "best.pt"
 
 print(f"Loading model from: {MODEL_PATH}")
 try:

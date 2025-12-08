@@ -29,10 +29,12 @@ if __name__ == '__main__':
     model = ultralytics.YOLO("yolov8s.pt")
 
     results = model.train(
+        imgsz=832,
         data="yolo_params.yaml",
         epochs=args.epochs,
         batch=4,
         # device=0,
+        device='cpu',
         single_cls=args.single_cls,  # MUST BE FALSE FOR MULTICLASS
         mosaic=args.mosaic,
         optimizer=args.optimizer,
